@@ -6,14 +6,15 @@ from bs4 import BeautifulSoup
 def get_live_market_data():
     target_url = "https://abgains.com/index.php?route=all-route" 
     
+    # Static offsets from the 30-count Bhimavaram anchor
     steps_from_30 = {
-        25: 75, 26: 20, 27: 10, 30: 0, 
+        25: 75, 26: 25, 27: 10, 30: 0, 
         35: -65, 37: -70, 40: -75, 45: -95, 47: -100, 50: -105,
         60: -125, 70: -155, 80: -180, 90: -200, 100: -210
     }
 
-    current_30_price = 465 
-    status_msg = "Using Manual Sheet Baseline"
+    current_30_price = None
+    status_msg = "System Tripped - Live Data Not Found"
 
     try:
         headers = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)'}
@@ -22,7 +23,6 @@ def get_live_market_data():
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             tables = soup.find_all('table')
-            
             for table in tables:
                 if "Bhimavaram" in table.text and "Vannamei" in table.text:
                     rows = table.find_all('tr')
@@ -31,35 +31,39 @@ def get_live_market_data():
                         if len(cols) >= 2:
                             count_label = cols[0].text.strip().replace('C', '').replace(' ', '')
                             price_val = cols[1].text.strip().replace('₹', '').replace(',', '')
-                            
                             if count_label == "30" and price_val.isdigit():
                                 current_30_price = int(price_val)
                                 status_msg = "Live Bhimavaram Anchor Active"
                                 break
-    except Exception as e:
-        status_msg = f"Fetch Error: {str(e)} (Using Baseline)"
+    except Exception:
+        status_msg = "Connection Tripped - Price Not Available"
 
     full_market_prices = {}
-    anchors = {c: current_30_price + diff for c, diff in steps_from_30.items()}
-
-    for c in range(25, 101):
-        if c >= 93: val = anchors[100]
-        elif c >= 83: val = anchors[90]
-        elif c >= 73: val = anchors[80]
-        elif c >= 63: val = anchors[70]
-        elif c >= 51: val = anchors[60]
-        elif c >= 48: val = anchors[50]
-        elif c >= 46: val = anchors[47]
-        elif c >= 43: val = anchors[45]
-        elif c >= 38: val = anchors[40]
-        elif c >= 36: val = anchors[37]
-        elif c >= 33: val = anchors[35]
-        elif c >= 28: val = anchors[30]
-        elif c == 27: val = anchors[27]
-        elif c == 26: val = anchors[26]
-        else: val = anchors[25] 
-        
-        full_market_prices[str(c)] = val
+    
+    # Strictly Live Logic: No baseline values allowed.
+    if current_30_price:
+        anchors = {c: current_30_price + diff for c, diff in steps_from_30.items()}
+        for c in range(25, 101):
+            if c >= 93: val = anchors[100]
+            elif c >= 83: val = anchors[90]
+            elif c >= 73: val = anchors[80]
+            elif c >= 63: val = anchors[70]
+            elif c >= 51: val = anchors[60]
+            elif c >= 48: val = anchors[50]
+            elif c >= 46: val = anchors[47]
+            elif c >= 43: val = anchors[45]
+            elif c >= 38: val = anchors[40]
+            elif c >= 36: val = anchors[37]
+            elif c >= 33: val = anchors[35]
+            elif c >= 28: val = anchors[30]
+            elif c == 27: val = anchors[27]
+            elif c == 26: val = anchors[26]
+            else: val = anchors[25] 
+            full_market_prices[str(c)] = val
+    else:
+        # Fill everything with "Not Available" if anchor fails
+        for c in range(25, 101):
+            full_market_prices[str(c)] = "Not Available"
 
     export_data = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %I:%M %p IST"),
