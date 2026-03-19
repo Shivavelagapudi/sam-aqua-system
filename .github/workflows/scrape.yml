@@ -2,7 +2,7 @@ name: Daily SAM AQUA Price Scraper
 
 on:
   schedule:
-    - cron: '30 0 * * *' # Runs at 6:00 AM IST
+    - cron: '30 0 * * *' 
   workflow_dispatch: 
 
 permissions:
@@ -33,4 +33,3 @@ jobs:
           git add prices.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update: Live Market Sync"
           git push
-
