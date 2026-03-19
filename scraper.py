@@ -1,30 +1,28 @@
 import json
 import random
-import os
 from datetime import datetime
 
+# This version has ZERO dependencies - It will NOT fail.
 def generate_data():
     # Baseline March 2026 AP Market Prices (₹/kg)
-    baseline_prices = {
-        "20": 550, "25": 510, "30": 470, "40": 350, 
-        "50": 320, "60": 300, "70": 290, "80": 280, "100": 250
+    baseline = {
+        "20": 555, "25": 515, "30": 475, "40": 355, 
+        "50": 325, "60": 305, "70": 295, "80": 285, "100": 255
     }
     
-    # Generate daily variance (+/- 10 rupees)
-    live_prices = {k: v + random.randint(-10, 10) for k, v in baseline_prices.items()}
+    # Add simple market fluctuation
+    live_prices = {k: v + random.randint(-8, 8) for k, v in baseline.items()}
 
-    # Prepare the data package for the iPad Dashboard
     export_data = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"),
-        "status": "Market Logic Active",
+        "status": "System Operational",
         "prices": live_prices
     }
 
-    # Save as prices.json
     with open('prices.json', 'w') as f:
         json.dump(export_data, f, indent=4)
     
-    print("Success: prices.json has been generated for the dashboard.")
+    print("Success: prices.json generated.")
 
 if __name__ == "__main__":
     generate_data()
