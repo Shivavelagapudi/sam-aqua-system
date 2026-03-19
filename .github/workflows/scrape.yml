@@ -1,0 +1,35 @@
+name: Daily SAM AQUA Price Scraper
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # Runs at 6:30 AM IST
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 requests
+
+      - name: Run the Scraper Script
+        run: python scraper.py
+
+      - name: Commit and Push the New Data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "SAM AQUA Bot"
+          git add prices.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update: Fresh AP Market Prices"
+          git push
