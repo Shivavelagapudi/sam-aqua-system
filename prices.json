@@ -1,6 +1,6 @@
 {
-    "timestamp": "2026-03-19 08:32 PM IST",
-    "status": "System Tripped - Live Data Not Found",
+    "timestamp": "2026-03-19 08:54 PM IST",
+    "status": "System Tripped - All Sources Failed",
     "prices": {
         "25": "Not Available",
         "26": "Not Available",
