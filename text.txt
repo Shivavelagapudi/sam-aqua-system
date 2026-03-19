@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM AQUA EXPORTS - Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white font-sans p-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex justify-between items-end border-b border-slate-800 pb-4 mb-8">
+            <h1 class="text-3xl font-bold text-sky-400">SAM AQUA EXPORTS LLP</h1>
+            <div id="dataStatus" class="text-sm bg-slate-800 text-slate-400 px-3 py-1 rounded border border-slate-700">
+                Fetching Data...
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <h2 class="text-xl font-semibold mb-4 text-emerald-400">Batch Parameters</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm text-slate-400">Target Packed Weight (kg)</label>
+                        <input type="number" id="targetWeight" value="10000" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">Target Packed Count</label>
+                        <input type="number" id="targetCount" value="35" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">Heading Yield (%)</label>
+                        <input type="number" id="headingYield" value="70" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">Process Mode</label>
+                        <select id="processMode" onchange="updatePeelingYield()" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                            <option value="96">PD (96%)</option>
+                            <option value="94">PDTO (94%)</option>
+                            <option value="104">EZ Peel (104%)</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">Peeling Yield (%)</label>
+                        <input type="number" id="peelingYield" value="96" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">Conversion Cost (₹/kg)</label>
+                        <input type="number" id="conversionCost" value="104.96" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm text-slate-400">USD Exchange Rate</label>
+                        <input type="number" id="exchangeRate" value="92.63" class="w-full bg-slate-800 border border-slate-700 rounded p-2 mt-1 text-white">
+                    </div>
+                    
+                    <button onclick="runSimulation()" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 rounded transition mt-4">
+                        RUN SIMULATION
+                    </button>
+                </div>
+            </div>
+
+            <div id="resultsPanel" class="md:col-span-2 hidden space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-900 p-6 rounded-xl border border-emerald-500/30 text-center">
+                        <p class="text-slate-400 text-sm uppercase tracking-wide">Export Floor (USD)</p>
+                        <p class="text-4xl font-bold text-emerald-400 mt-2" id="outUsdLb">$0.00 / lb</p>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 text-center">
+                        <p class="text-slate-400 text-sm uppercase tracking-wide">Procurement Target</p>
+                        <p class="text-2xl font-bold text-sky-400 mt-2">Buy <span id="outBuyCount">0</span> Count</p>
+                        <p class="text-slate-300 mt-1">@ ₹<span id="outMarketRate">0</span> / kg</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-semibold text-white mb-4 border-b border-slate-700 pb-2">Physical Mass Balance</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Raw Purchased:</span>
+                            <span class="font-bold text-white"><span id="outRawKg">0</span> kg</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Final Packed:</span>
+                            <span class="font-bold text-emerald-400"><span id="outPackedKg">0</span> kg</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Organic Waste:</span>
+                            <span class="font-bold text-orange-400"><span id="outWasteKg">0</span> kg</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                        <h3 class="text-lg font-semibold text-white mb-4 border-b border-slate-700 pb-2">Financials (INR Lakhs)</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Raw Value:</span>
+                            <span class="font-bold text-white">₹<span id="outRawLakhs">0</span> L</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-slate-400">Factory Opex:</span>
+                            <span class="font-bold text-white">₹<span id="outOpexLakhs">0</span> L</span>
+                        </div>
+                        <div class="flex justify-between pt-2 border-t border-slate-700">
+                            <span class="text-sky-400 font-bold">Total Outlay:</span>
+                            <span class="font-bold text-sky-400">₹<span id="outTotalLakhs">0</span> L</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="placeholder" class="md:col-span-2 flex items-center justify-center bg-slate-900 border border-slate-800 rounded-xl min-h-[400px]">
+                <p class="text-slate-500">Awaiting Simulation Run...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let liveMarketData = {};
+
+        // Fetch the data automatically when the page loads
+        window.onload = async function() {
+            try {
+                // To bypass browser cache issues on GitHub pages, append a timestamp
+                const cacheBuster = new Date().getTime();
+                const response = await fetch(`prices.json?v=${cacheBuster}`);
+                if (!response.ok) throw new Error('Cannot find prices.json');
+                
+                const data = await response.json();
+                liveMarketData = data.prices;
+                
+                document.getElementById('dataStatus').innerHTML = `<span class="text-emerald-400">●</span> Data Updated: ${data.timestamp}`;
+            } catch (error) {
+                document.getElementById('dataStatus').innerHTML = `<span class="text-orange-400">●</span> Error: No price data found.`;
+                console.error("Fetch error:", error);
+            }
+        };
+
+        function updatePeelingYield() {
+            const mode = document.getElementById('processMode').value;
+            if(mode !== 'custom') document.getElementById('peelingYield').value = mode;
+        }
+
+        function getInterpolatedPrice(count) {
+            if (Object.keys(liveMarketData).length === 0) return 0;
+            
+            const counts = Object.keys(liveMarketData).map(Number).sort((a,b) => a-b);
+            if (count <= counts[0]) return liveMarketData[counts[0]];
+            if (count >= counts[counts.length - 1]) return liveMarketData[counts[counts.length - 1]];
+
+            for (let i = 0; i < counts.length - 1; i++) {
+                if (count >= counts[i] && count <= counts[i+1]) {
+                    const c1 = counts[i], c2 = counts[i+1];
+                    const p1 = liveMarketData[c1], p2 = liveMarketData[c2];
+                    const ratio = (count - c1) / (c2 - c1);
+                    return p1 + ratio * (p2 - p1);
+                }
+            }
+            return 0;
+        }
+
+        function runSimulation() {
+            if (Object.keys(liveMarketData).length === 0) {
+                alert("Prices not loaded yet. Wait a moment or check if prices.json exists.");
+                return;
+            }
+
+            const targetWeight = parseFloat(document.getElementById('targetWeight').value);
+            const targetCount = parseFloat(document.getElementById('targetCount').value);
+            const headingYield = parseFloat(document.getElementById('headingYield').value) / 100;
+            const peelingYield = parseFloat(document.getElementById('peelingYield').value) / 100;
+            const conversionCost = parseFloat(document.getElementById('conversionCost').value);
+            const exchangeRate = parseFloat(document.getElementById('exchangeRate').value);
+
+            const overallYield = headingYield * peelingYield;
+            const requiredCount = targetCount * overallYield;
+            const marketRate = getInterpolatedPrice(requiredCount);
+            
+            const rawWeight = targetWeight / overallYield;
+            const wasteWeight = rawWeight - targetWeight;
+            
+            const totalRawCost = rawWeight * marketRate;
+            const totalOpexCost = targetWeight * conversionCost;
+            const totalOutlayInr = totalRawCost + totalOpexCost;
+            
+            const totalOutlayUsd = totalOutlayInr / exchangeRate;
+            const breakEvenUsdLb = totalOutlayUsd / (targetWeight * 2.20462);
+
+            document.getElementById('outUsdLb').innerText = `$${breakEvenUsdLb.toFixed(2)} / lb`;
+            document.getElementById('outBuyCount').innerText = requiredCount.toFixed(1);
+            document.getElementById('outMarketRate').innerText = marketRate.toFixed(0);
+            
+            document.getElementById('outRawKg').innerText = Math.round(rawWeight).toLocaleString('en-IN');
+            document.getElementById('outPackedKg').innerText = Math.round(targetWeight).toLocaleString('en-IN');
+            document.getElementById('outWasteKg').innerText = Math.round(wasteWeight).toLocaleString('en-IN');
+
+            document.getElementById('outRawLakhs').innerText = (totalRawCost / 100000).toFixed(2);
+            document.getElementById('outOpexLakhs').innerText = (totalOpexCost / 100000).toFixed(2);
+            document.getElementById('outTotalLakhs').innerText = (totalOutlayInr / 100000).toFixed(2);
+
+            document.getElementById('placeholder').classList.add('hidden');
+            document.getElementById('resultsPanel').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
