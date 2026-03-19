@@ -7,7 +7,7 @@ def get_live_market_data():
     # 1. Target URL for Bhimavaram/AP Market
     target_url = "https://abgains.com/index.php?route=all-route" 
     
-    # 2. Your EXACT Sheet Logic (Price jumps/falls relative to 30-count)
+    # 2. Your EXACT Sheet Logic (Raw Rupee jumps/falls relative to 30-count)
     # We use 30-count as the "Master Anchor"
     steps_from_30 = {
         25: 75, 26: 20, 27: 10, 30: 0, 
@@ -20,7 +20,7 @@ def get_live_market_data():
     status_msg = "Using Manual Sheet Baseline"
 
     try:
-        # User-Agent makes the scraper look like a real browser
+        # Look like a real browser so we don't get blocked
         headers = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)'}
         response = requests.get(target_url, timeout=15, headers=headers)
         
@@ -35,11 +35,11 @@ def get_live_market_data():
                     for row in rows:
                         cols = row.find_all('td')
                         if len(cols) >= 2:
-                            count_label = cols[0].text.strip()
+                            count_label = cols[0].text.strip().replace('C', '').replace(' ', '')
                             price_val = cols[1].text.strip().replace('₹', '').replace(',', '')
                             
                             # We only care about finding the 30-count "Master Anchor"
-                            if "30" in count_label and price_val.isdigit():
+                            if count_label == "30" and price_val.isdigit():
                                 current_30_price = int(price_val)
                                 status_msg = "Live Bhimavaram Anchor Active"
                                 break
@@ -49,7 +49,7 @@ def get_live_market_data():
     # 3. Build the full 25-100 price list using your Fixed Steps
     full_market_prices = {}
     
-    # Pre-calculate the anchor points
+    # Pre-calculate the anchor points (Anchor + exact Rupee jump)
     anchors = {c: current_30_price + diff for c, diff in steps_from_30.items()}
 
     # Map every single count into your specific brackets
