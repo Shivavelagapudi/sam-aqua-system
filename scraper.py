@@ -1,12 +1,18 @@
 import json
-import requests
+import time
+import random
+import re
 from datetime import datetime
+import cloudscraper
 from bs4 import BeautifulSoup
 
 def get_live_market_data():
-    target_url = "https://abgains.com/index.php?route=all-route" 
+    # 1. Primary Target
+    primary_url = "https://abgains.com/index.php?route=all-route"
     
-    # Static offsets from the 30-count Bhimavaram anchor
+    # 2. The Fallback Target: Google's cached snapshot of the site (bypasses firewalls)
+    fallback_url = "http://webcache.googleusercontent.com/search?q=cache:https://abgains.com/index.php?route=all-route"
+    
     steps_from_30 = {
         25: 75, 26: 25, 27: 10, 30: 0, 
         35: -65, 37: -70, 40: -75, 45: -95, 47: -100, 50: -105,
@@ -14,33 +20,68 @@ def get_live_market_data():
     }
 
     current_30_price = None
-    status_msg = "System Tripped - Live Data Not Found"
+    status_msg = "System Tripped - All Sources Failed"
 
-    try:
-        headers = {'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)'}
-        response = requests.get(target_url, timeout=15, headers=headers)
-        
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, 'html.parser')
-            tables = soup.find_all('table')
-            for table in tables:
-                if "Bhimavaram" in table.text and "Vannamei" in table.text:
-                    rows = table.find_all('tr')
-                    for row in rows:
-                        cols = row.find_all('td')
-                        if len(cols) >= 2:
-                            count_label = cols[0].text.strip().replace('C', '').replace(' ', '')
-                            price_val = cols[1].text.strip().replace('₹', '').replace(',', '')
-                            if count_label == "30" and price_val.isdigit():
-                                current_30_price = int(price_val)
-                                status_msg = "Live Bhimavaram Anchor Active"
-                                break
-    except Exception:
-        status_msg = "Connection Tripped - Price Not Available"
+    # Create the advanced browser-mimicking scraper
+    scraper = cloudscraper.create_scraper(
+        browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'desktop': True
+        }
+    )
 
+    # Order of attack: Hit the primary site, if it fails, hit the Google Cache fallback
+    sources_to_try = [
+        {"name": "Primary ABGains", "url": primary_url},
+        {"name": "Google Cache Fallback", "url": fallback_url}
+    ]
+
+    for source in sources_to_try:
+        if current_30_price:
+            break # Stop attacking if we already got the data
+            
+        # Try 10 times per source
+        for attempt in range(1, 11):
+            try:
+                # Random delay to trick anti-bot security
+                time.sleep(random.uniform(2.0, 5.0))
+                
+                # Extended timeout to give slow Indian servers time to respond
+                response = scraper.get(source["url"], timeout=30)
+                
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.text, 'html.parser')
+                    tables = soup.find_all('table')
+                    
+                    for table in tables:
+                        text_content = table.text.lower()
+                        # Fuzzy match to account for typos on their end
+                        if "bhima" in text_content and "vannamei" in text_content:
+                            rows = table.find_all('tr')
+                            for row in rows:
+                                cols = row.find_all(['td', 'th'])
+                                if len(cols) >= 2:
+                                    # Strip out everything except the pure numbers
+                                    count_label = re.sub(r'\D', '', cols[0].text.strip())
+                                    price_val = re.sub(r'\D', '', cols[1].text.strip())
+                                    
+                                    if count_label == "30" and price_val:
+                                        current_30_price = int(price_val)
+                                        status_msg = f"Live Anchor Active ({source['name']})"
+                                        break
+                        if current_30_price:
+                            break
+                
+                if current_30_price:
+                    break # Success! Break out of the 10-attempt loop
+                    
+            except Exception:
+                continue # If it crashes, silently ignore it and try the next attempt
+
+    # Math Logic to calculate the rest of the board
     full_market_prices = {}
     
-    # Strictly Live Logic: No baseline values allowed.
     if current_30_price:
         anchors = {c: current_30_price + diff for c, diff in steps_from_30.items()}
         for c in range(25, 101):
@@ -61,7 +102,7 @@ def get_live_market_data():
             else: val = anchors[25] 
             full_market_prices[str(c)] = val
     else:
-        # Fill everything with "Not Available" if anchor fails
+        # The ultimate catch-all: Only triggers if the main site AND Google are dead
         for c in range(25, 101):
             full_market_prices[str(c)] = "Not Available"
 
