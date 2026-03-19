@@ -8,7 +8,8 @@ from playwright.sync_api import sync_playwright
 
 def get_live_market_data():
     primary_url = "https://abgains.com/index.php?route=all-route"
-    fallback_url = "http://webcache.googleusercontent.com/search?q=cache:https://abgains.com/index.php?route=all-route"
+    fallback_url_1 = "http://webcache.googleusercontent.com/search?q=cache:https://abgains.com/index.php?route=all-route"
+    fallback_url_2 = "https://web.archive.org/web/2/https://abgains.com/index.php?route=all-route"
     
     steps_from_30 = {
         25: 75, 26: 25, 27: 10, 30: 0, 
@@ -21,13 +22,12 @@ def get_live_market_data():
 
     sources_to_try = [
         {"name": "Primary ABGains", "url": primary_url},
-        {"name": "Google Cache Fallback", "url": fallback_url}
+        {"name": "Google Cache", "url": fallback_url_1},
+        {"name": "Wayback Machine", "url": fallback_url_2}
     ]
 
-    # Fire up the headless Chromium browser
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        # Spoof a real Windows 10 Chrome user
         page = browser.new_page(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
         for source in sources_to_try:
@@ -37,33 +37,36 @@ def get_live_market_data():
             for attempt in range(1, 11):
                 try:
                     time.sleep(random.uniform(2.0, 5.0))
-                    
-                    # Force the browser to wait until the network is totally quiet (JS finished loading)
                     page.goto(source["url"], timeout=45000, wait_until="domcontentloaded")
-                    time.sleep(4) # Give it 4 extra seconds just to be absolutely certain the table renders
+                    time.sleep(5) 
                     
-                    # Extract the fully rendered HTML
                     html_content = page.content()
-                    soup = BeautifulSoup(html_content, 'html.parser')
-                    tables = soup.find_all('table')
+                    print(f"DEBUG: Attacking {source['name']} - Attempt {attempt}. Page Title: '{page.title()}'")
                     
-                    for table in tables:
-                        text_content = table.text.lower()
-                        if "bhima" in text_content and "vannamei" in text_content:
-                            rows = table.find_all('tr')
-                            for row in rows:
-                                cols = row.find_all(['td', 'th'])
-                                if len(cols) >= 2:
-                                    count_label = re.sub(r'\D', '', cols[0].text.strip())
-                                    price_val = re.sub(r'\D', '', cols[1].text.strip())
-                                    
-                                    if count_label == "30" and price_val:
-                                        current_30_price = int(price_val)
-                                        status_msg = f"Live Anchor Active ({source['name']})"
-                                        break
+                    soup = BeautifulSoup(html_content, 'html.parser')
+                    
+                    # Ruthless Extraction: Find '30' and any number between 300-700
+                    rows = soup.find_all('tr')
+                    for row in rows:
+                        cols = row.find_all(['td', 'th'])
+                        if len(cols) >= 2:
+                            text_c0 = cols[0].text.strip().lower()
+                            text_c1 = cols[1].text.strip().replace(',', '')
+                            
+                            count_matches = re.findall(r'\b30\b', text_c0)
+                            price_matches = re.findall(r'\d{3}', text_c1)
+                            
+                            if count_matches and price_matches:
+                                potential_price = int(price_matches[0])
+                                if 300 <= potential_price <= 700:
+                                    current_30_price = potential_price
+                                    status_msg = f"Live Anchor Active ({source['name']})"
+                                    print(f"DEBUG: SUCCESS - Extracted {current_30_price} from {source['name']}")
+                                    break
                         if current_30_price:
                             break
-                except Exception:
+                except Exception as e:
+                    print(f"DEBUG: Blocked on {source['name']} Attempt {attempt} - {e}")
                     continue 
                 
                 if current_30_price:
