@@ -2,14 +2,14 @@ import json
 import time
 import random
 import re
+import urllib.parse
 from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 def get_live_market_data():
-    primary_url = "https://abgains.com/index.php?route=all-route"
-    fallback_url_1 = "http://webcache.googleusercontent.com/search?q=cache:https://abgains.com/index.php?route=all-route"
-    fallback_url_2 = "https://web.archive.org/web/2/https://abgains.com/index.php?route=all-route"
+    base_url = "https://abgains.com/index.php?route=all-route"
+    encoded_url = urllib.parse.quote(base_url)
     
     steps_from_30 = {
         25: 75, 26: 25, 27: 10, 30: 0, 
@@ -18,34 +18,39 @@ def get_live_market_data():
     }
 
     current_30_price = None
-    status_msg = "System Tripped - All Sources Failed"
+    status_msg = "System Tripped - All Proxy Layers Failed"
 
+    # THE PIVOT: Bouncing the request through open proxies to bypass the GitHub IP block
     sources_to_try = [
-        {"name": "Primary ABGains", "url": primary_url},
-        {"name": "Google Cache", "url": fallback_url_1},
-        {"name": "Wayback Machine", "url": fallback_url_2}
+        {"name": "AllOrigins Proxy", "url": f"https://api.allorigins.win/raw?url={encoded_url}"},
+        {"name": "CorsProxy Layer", "url": f"https://corsproxy.io/?{encoded_url}"},
+        {"name": "Primary Target", "url": base_url},
+        {"name": "Google Cache", "url": f"http://webcache.googleusercontent.com/search?q=cache:{base_url}"},
+        {"name": "Wayback Machine", "url": f"https://web.archive.org/web/2/{base_url}"}
     ]
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        page = browser.new_page(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            extra_http_headers={'Accept-Language': 'en-US,en;q=0.9'}
+        )
 
         for source in sources_to_try:
             if current_30_price:
                 break 
                 
-            for attempt in range(1, 11):
+            for attempt in range(1, 6): 
                 try:
-                    time.sleep(random.uniform(2.0, 5.0))
+                    time.sleep(random.uniform(2.0, 4.0))
                     page.goto(source["url"], timeout=45000, wait_until="domcontentloaded")
-                    time.sleep(5) 
+                    time.sleep(3) 
                     
                     html_content = page.content()
-                    print(f"DEBUG: Attacking {source['name']} - Attempt {attempt}. Page Title: '{page.title()}'")
+                    print(f"DEBUG: Hitting {source['name']} - Attempt {attempt}")
                     
                     soup = BeautifulSoup(html_content, 'html.parser')
                     
-                    # Ruthless Extraction: Find '30' and any number between 300-700
                     rows = soup.find_all('tr')
                     for row in rows:
                         cols = row.find_all(['td', 'th'])
@@ -61,12 +66,12 @@ def get_live_market_data():
                                 if 300 <= potential_price <= 700:
                                     current_30_price = potential_price
                                     status_msg = f"Live Anchor Active ({source['name']})"
-                                    print(f"DEBUG: SUCCESS - Extracted {current_30_price} from {source['name']}")
+                                    print(f"DEBUG: DATA EXTRACTED - {current_30_price} via {source['name']}")
                                     break
                         if current_30_price:
                             break
                 except Exception as e:
-                    print(f"DEBUG: Blocked on {source['name']} Attempt {attempt} - {e}")
+                    print(f"DEBUG: Blocked on {source['name']} - {e}")
                     continue 
                 
                 if current_30_price:
