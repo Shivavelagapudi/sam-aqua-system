@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM AQUA - Live Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f5; color: #333; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
+        h1 { color: #004b87; text-align: center; margin-bottom: 5px; }
+        .status-box { text-align: center; font-size: 0.9em; margin-bottom: 25px; padding: 10px; background: #e6f4ea; color: #1e8e3e; border-radius: 6px; border: 1px solid #cce8d6; }
+        .error-box { background: #fce8e6; color: #d93025; border-color: #fad2cf; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: center; font-size: 1.1em; }
+        th { background-color: #004b87; color: white; border-bottom: none; }
+        tr:hover { background-color: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SAM AQUA Pricing</h1>
+        <div class="status-box" id="status-display">Fetching live data from GitHub...</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Shrimp Count</th>
+                    <th>Price (₹)</th>
+                </tr>
+            </thead>
+            <tbody id="price-table">
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        // This points directly to your raw data file
+        const dataUrl = "https://raw.githubusercontent.com/Shivavelagapudi/sam-aqua-system/main/prices.json";
+
+        async function loadDashboard() {
+            try {
+                // Fetch the JSON from GitHub
+                const response = await fetch(dataUrl + "?t=" + new Date().getTime()); // bypass cache
+                if (!response.ok) throw new Error("Data not found.");
+                
+                const data = await response.json();
+                
+                // Update Timestamp
+                document.getElementById('status-display').innerHTML = `<strong>Last Updated:</strong> ${data.timestamp}<br><strong>System:</strong> ${data.status}`;
+                
+                // Populate Table
+                const tableBody = document.getElementById('price-table');
+                tableBody.innerHTML = ''; 
+
+                // Sort the counts nicely
+                const counts = Object.keys(data.prices).sort((a, b) => parseInt(a) - parseInt(b));
+
+                for (let count of counts) {
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td><strong>${count} C</strong></td>
+                            <td>₹ ${data.prices[count]}</td>
+                        </tr>
+                    `;
+                }
+            } catch (error) {
+                const statusBox = document.getElementById('status-display');
+                statusBox.className = "status-box error-box";
+                statusBox.innerHTML = "<strong>ERROR:</strong> Could not load live prices. Make sure prices.json exists.";
+            }
+        }
+
+        loadDashboard();
+    </script>
+</body>
+</html>
