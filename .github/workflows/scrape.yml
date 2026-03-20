@@ -18,9 +18,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          pip install playwright beautifulsoup4
-          playwright install chromium
+        run: pip install curl_cffi beautifulsoup4
 
       - name: Run Scraper
         run: python scraper.py
