@@ -3,71 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAM AQUA - Live Dashboard</title>
+    <title>SAM AQUA - Break-Even Calculator</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f5; color: #333; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); }
-        h1 { color: #004b87; text-align: center; margin-bottom: 5px; }
-        .status-box { text-align: center; font-size: 0.9em; margin-bottom: 25px; padding: 10px; background: #e6f4ea; color: #1e8e3e; border-radius: 6px; border: 1px solid #cce8d6; }
-        .error-box { background: #fce8e6; color: #d93025; border-color: #fad2cf; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: center; font-size: 1.1em; }
-        th { background-color: #004b87; color: white; border-bottom: none; }
-        tr:hover { background-color: #f5f5f5; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f5; color: #333; padding: 20px; display: flex; justify-content: center; }
+        .dashboard-wrapper { display: flex; gap: 20px; max-width: 1000px; width: 100%; flex-wrap: wrap; }
+        .panel { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); flex: 1; min-width: 300px; }
+        h1, h2 { color: #004b87; margin-top: 0; }
+        .status-box { font-size: 0.85em; margin-bottom: 20px; padding: 10px; background: #e6f4ea; color: #1e8e3e; border-radius: 6px; text-align: center; }
+        
+        /* Calculator Form */
+        label { display: block; font-weight: bold; margin-top: 15px; margin-bottom: 5px; color: #555; }
+        select, input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1em; box-sizing: border-box; }
+        button { margin-top: 25px; width: 100%; padding: 12px; background: #004b87; color: white; border: none; border-radius: 6px; font-size: 1.1em; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        button:hover { background: #003666; }
+        
+        /* Results */
+        .results-box { margin-top: 25px; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 5px solid #004b87; display: none; }
+        .result-line { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 1.1em; }
+        .result-total { font-weight: bold; font-size: 1.3em; color: #d93025; border-top: 2px solid #ddd; padding-top: 10px; margin-top: 10px; }
+
+        /* Table */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.9em; }
+        th, td { padding: 8px; border-bottom: 1px solid #ddd; text-align: center; }
+        th { background-color: #004b87; color: white; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>SAM AQUA Pricing</h1>
-        <div class="status-box" id="status-display">Fetching live data from GitHub...</div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Shrimp Count</th>
-                    <th>Price (₹)</th>
-                </tr>
-            </thead>
-            <tbody id="price-table">
-                </tbody>
-        </table>
+    <div class="dashboard-wrapper">
+        <div class="panel">
+            <h1>Break-Even Calculator</h1>
+            <div class="status-box" id="status-display">Fetching live pricing...</div>
+
+            <label for="count-select">Shrimp Count:</label>
+            <select id="count-select" onchange="updateLivePrice()">
+                <option value="">Loading counts...</option>
+            </select>
+
+            <label for="live-price">Live Market Price (₹ / kg):</label>
+            <input type="number" id="live-price" readonly style="background: #eef2f5; color: #004b87; font-weight: bold;">
+
+            <label for="processing-cost">Processing Cost (₹ / kg):</label>
+            <input type="number" id="processing-cost" placeholder="e.g., 25" value="25">
+
+            <label for="yield-percent">Yield / Recovery (%):</label>
+            <input type="number" id="yield-percent" placeholder="e.g., 60" value="60">
+
+            <button onclick="calculateBreakEven()">Calculate Break-Even</button>
+
+            <div class="results-box" id="results-box">
+                <div class="result-line"><span>Raw Material Cost:</span> <span id="res-raw">₹ 0.00</span></div>
+                <div class="result-line"><span>Processing Cost:</span> <span id="res-proc">₹ 0.00</span></div>
+                <div class="result-line result-total"><span>Break-Even Selling Price:</span> <span id="res-breakeven">₹ 0.00 / kg</span></div>
+            </div>
+        </div>
+
+        <div class="panel" style="max-width: 350px;">
+            <h2>Live Market Board</h2>
+            <table>
+                <thead>
+                    <tr><th>Count</th><th>Price (₹)</th></tr>
+                </thead>
+                <tbody id="price-table">
+                    </tbody>
+            </table>
+        </div>
     </div>
 
     <script>
-        // This points directly to your raw data file
         const dataUrl = "https://raw.githubusercontent.com/Shivavelagapudi/sam-aqua-system/main/prices.json";
+        let globalPrices = {};
 
         async function loadDashboard() {
             try {
-                // Fetch the JSON from GitHub
-                const response = await fetch(dataUrl + "?t=" + new Date().getTime()); // bypass cache
-                if (!response.ok) throw new Error("Data not found.");
-                
+                const response = await fetch(dataUrl + "?t=" + new Date().getTime());
+                if (!response.ok) throw new Error("Data not found");
                 const data = await response.json();
                 
-                // Update Timestamp
-                document.getElementById('status-display').innerHTML = `<strong>Last Updated:</strong> ${data.timestamp}<br><strong>System:</strong> ${data.status}`;
+                document.getElementById('status-display').innerHTML = `Live Data Synced: ${data.timestamp}`;
+                globalPrices = data.prices;
                 
-                // Populate Table
                 const tableBody = document.getElementById('price-table');
+                const countSelect = document.getElementById('count-select');
                 tableBody.innerHTML = ''; 
+                countSelect.innerHTML = '<option value="">-- Select a Count --</option>';
 
-                // Sort the counts nicely
                 const counts = Object.keys(data.prices).sort((a, b) => parseInt(a) - parseInt(b));
 
                 for (let count of counts) {
-                    tableBody.innerHTML += `
-                        <tr>
-                            <td><strong>${count} C</strong></td>
-                            <td>₹ ${data.prices[count]}</td>
-                        </tr>
-                    `;
+                    // Populate Table
+                    tableBody.innerHTML += `<tr><td><strong>${count} C</strong></td><td>₹ ${data.prices[count]}</td></tr>`;
+                    // Populate Dropdown
+                    countSelect.innerHTML += `<option value="${data.prices[count]}">${count} Count</option>`;
                 }
             } catch (error) {
-                const statusBox = document.getElementById('status-display');
-                statusBox.className = "status-box error-box";
-                statusBox.innerHTML = "<strong>ERROR:</strong> Could not load live prices. Make sure prices.json exists.";
+                document.getElementById('status-display').innerHTML = "ERROR: Could not load data.";
+                document.getElementById('status-display').style.background = "#fce8e6";
+                document.getElementById('status-display').style.color = "#d93025";
             }
+        }
+
+        function updateLivePrice() {
+            const select = document.getElementById('count-select');
+            document.getElementById('live-price').value = select.value;
+        }
+
+        function calculateBreakEven() {
+            const rawPrice = parseFloat(document.getElementById('live-price').value);
+            const procCost = parseFloat(document.getElementById('processing-cost').value);
+            const yieldPercent = parseFloat(document.getElementById('yield-percent').value);
+
+            if (!rawPrice || !procCost || !yieldPercent) {
+                alert("Please ensure a count is selected and all fields have numbers.");
+                return;
+            }
+
+            // Standard Break-Even Math: (Raw Price / Yield) + Processing Cost
+            const effectiveRawCost = rawPrice / (yieldPercent / 100);
+            const breakEven = effectiveRawCost + procCost;
+
+            document.getElementById('res-raw').innerText = `₹ ${effectiveRawCost.toFixed(2)}`;
+            document.getElementById('res-proc').innerText = `₹ ${procCost.toFixed(2)}`;
+            document.getElementById('res-breakeven').innerText = `₹ ${breakEven.toFixed(2)} / kg`;
+            
+            document.getElementById('results-box').style.display = 'block';
         }
 
         loadDashboard();
