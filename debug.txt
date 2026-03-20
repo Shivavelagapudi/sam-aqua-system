@@ -1,0 +1,1730 @@
+Status: Data Not Found. Title: A.B Gains
+
+RAW HTML EXTRACT:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>A.B Gains</title>
+<meta name="title" content="A.B Gains" />
+<meta name="description" content="Gains and Gains" /><meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="Mon, 01 Jul 1970 00:00:00 GMT" />
+<meta name="robots" content="index, follow" /><meta name="googlebot" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="manifest" href="https://abgains.com/oc-content/themes/epsilon/manifest.json"> <!-- link manifest -->
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://abgains.com/oc-content/themes/epsilon/images/favicons/sample/favicon.ico" />
+<link rel="icon" href="https://abgains.com/oc-content/themes/epsilon/images/favicons/sample/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="icon" href="https://abgains.com/oc-content/themes/epsilon/images/favicons/sample/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://abgains.com/oc-content/themes/epsilon/images/favicons/sample/apple-touch-icon.png">
+<!--<link rel="mask-icon" href="https://abgains.com/oc-content/themes/epsilon/images/favicons/sample/safari-pinned-tab.svg" color="#8bc72a">-->
+<!--<meta name="theme-color" content="#8bc72a">-->
+<script type="text/javascript">
+  var currentLocaleCode = 'en_US';
+  var currentLocale = 'English (US)';
+  var fileDefaultText = 'No file selected';
+  var fileBtnText = 'Choose File';
+  var baseDir = 'https://abgains.com/';
+  var baseSearchUrl = 'https://abgains.com/index.php?page=search';
+  var baseAjaxUrl = 'https://abgains.com/index.php?ajaxRequest=1';
+  var currentLocation = '';
+  var currentSection = '';
+  var userLogged = '0';
+  var adminLogged = '0';
+  var epsLazy = '0';
+  var darkMode = '0';
+  var imgPreviewRatio = 1.333;
+  var searchRewrite = '/search';
+  var ajaxSearch = '1';
+  var ajaxForms = '0';
+  var locationPick = '0';
+  var delTitleNc = 'Parent category cannot be selected';
+  var jqueryVersion = '1';
+  var isRtl = false;
+</script>
+
+<script type="text/javascript">
+	if ('serviceWorker' in navigator) {
+	  window.addEventListener('load', function() {
+	    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+	      // Registration was successful
+	      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	    }, function(err) {
+	      // registration failed :(
+	      console.log('ServiceWorker registration failed: ', err);
+	    });
+	  });
+	}
+   
+</script>
+
+<meta name="generator" content="Osclass 8.2.1" />
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+          var OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "8b1ffc9b-c849-475a-abaa-3986f95c7c87",
+            });
+          });
+        </script>      
+      <script type="text/javascript">var ocRefreshMessage=10000;var ocRefreshUser=120000;var ocRefreshClosed=60000;var ocBaseUrl="https://abgains.com/";var ocAjaxUrl="https://abgains.com/index.php?ajaxRequest=1&ajaxChat=1";var ocUserId=0;var ocRemoveMessage="Are you sure you want to remove this chat? Action cannot be undone.";var ocRemoveBlock="Are you sure you want unblock this user? User will be able to contact you via chat.";var ocRemoveBlockAll="Are you sure you want unblock all users? Anyone will be able to contact you via chat.";var ocOptBlock="User blocked";var ocOptEmail="Chat transcript sent";var ocBlockAll="Block all";var ocBlockAllActive="Cancel full block";var ocNewMessage="You have a new message!";var ocAllString="All users blocked";var ocDefImg="https://abgains.com/oc-content/plugins/online_chat/img/no-user.png";</script><link href="https://abgains.com/oc-content/plugins/youtube/css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://abgains.com/oc-content/plugins/jobs_attributes/css/styles.css" rel="stylesheet" type="text/css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" type="text/css" />
+<link href="https://abgains.com/oc-content/uploads/minify/8d5a4d1316724d5fcfa4f348c1e5fc87.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://abgains.com/oc-content/uploads/minify/bb9279a56e4d5f2ebd973ab6ff1d2c1b.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script>
+<style></style></head>
+
+<body id="home" class="layout-default">
+  <header>
+    
+  <div class="container cmain">
+    <a class="menu btn btn-white isMobile" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+    </a>
+    
+    <a href="https://abgains.com/" class="logo"><img src="https://abgains.com/oc-content/themes/epsilon/images/logo.png" alt="A.B Gains"/></a>
+    <style>
+       
+
+        #header-bar {
+            position: relative;
+            padding: 20px;
+           margin-bottom: 20px;
+        }
+
+        .middle-block {
+            position: relative;
+            display: inline-block;
+        }
+
+        .loader {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top-color: #007bff; /* Customize color here */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+        }
+
+        .loading .loader {
+            display: block;
+        }
+    </style>
+    
+
+<div id="header-bar">
+    <div class="middle-block logo">
+        <a href="https://abgains.com/" class="loading-link"></a>
+        <div class="loader"></div>
+    </div>
+</div>
+
+
+
+<!-- Additional links for testing -->
+
+
+<script>
+    $(document).ready(function() {
+        // Event handler for any anchor tag
+        $(document).on('click', 'a', function(event) {
+            const targetUrl = $(this).attr('href'); // Get the target URL
+
+            // Check if the clicked link has the "delete" class
+            if ($(this).hasClass('delete')) {
+                return; // Do not show loader for account deletion links
+            }
+
+            // Only add loading if the target URL is not "#"
+            if (targetUrl && targetUrl !== "#") {
+                event.preventDefault(); // Prevent default action for valid URLs
+                $('#header-bar .middle-block').addClass('loading');
+
+                // Directly navigate to the target URL
+                window.location.href = targetUrl; // Actual navigation
+            }
+        });
+
+        // Event handler for any form submission
+        $(document).on('submit', 'form', function(event) {
+            $('#header-bar .middle-block').addClass('loading'); // Show loader
+            // The form will submit naturally; no need to prevent default
+        });
+    });
+</script>
+
+
+
+
+    <div class="links">
+      <a class="publish btn" href="https://abgains.com/index.php?page=item&action=item_add">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24"><path d="M352 240v32c0 6.6-5.4 12-12 12h-88v88c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-88h-88c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h88v-88c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v88h88c6.6 0 12 5.4 12 12zm96-160v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>
+        Add To Listing      </a>
+      
+     <!--a class="publish btn mini" href="https://abgains.com/index.php?page=item&action=item_add">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>
+      </a--->
+      
+      <a class="account btn btn-white" href="https://abgains.com/index.php?page=login">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="18" height="18"><path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"/></svg>
+                
+        Sign in / Register      </a>
+
+      <a class="maccount btn btn-white isMobile" href="https://abgains.com/index.php?page=login">
+        <img src="https://abgains.com/oc-content/themes/epsilon/images/default-user-image.png" alt="Non-logged user" width="36" height="36"/>
+      </a>
+      
+              <a class="location btn btn-white" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="18" height="18"><path d="M347.94 129.86L203.6 195.83a31.938 31.938 0 0 0-15.77 15.77l-65.97 144.34c-7.61 16.65 9.54 33.81 26.2 26.2l144.34-65.97a31.938 31.938 0 0 0 15.77-15.77l65.97-144.34c7.61-16.66-9.54-33.81-26.2-26.2zm-77.36 148.72c-12.47 12.47-32.69 12.47-45.16 0-12.47-12.47-12.47-32.69 0-45.16 12.47-12.47 32.69-12.47 45.16 0 12.47 12.47 12.47 32.69 0 45.16zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 448c-110.28 0-200-89.72-200-200S137.72 56 248 56s200 89.72 200 200-89.72 200-200 200z"/></svg>
+
+          Location        </a>
+            
+      <a class="search btn btn-white isMobile delete" href="0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+      </a>
+      
+      
+            
+      <div class="divider">&nbsp;</div>
+      
+              <a class="company btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=bpr-list">Companies</a>
+      
+        <a class="blog btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=all-route&my-numeric-param=12345&my-own-param=my-own-value">Price Trends</a>
+
+        <a class="blog btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=alcal-route&my-numeric-param=12345&my-own-param=my-own-value">Calculators</a>
+
+
+              <!---a class="forum btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=frm-home">Forums</a---->
+              <a class="forum btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=frm-board&boardSlug=vannamei&boardId=1">Forums</a>
+
+          
+              <a class="blog btn btn-white noicon" href="https://abgains.com/index.php?page=custom&route=blg-home">Blog</a>
+           
+            
+          </div>
+        
+  </div>
+  
+  <div class="container alt csearch" style="display:none;">
+    <a href="#" class="back btn btn-white"><i class="fas fa-chevron-left"></i></a>
+    
+    <form action="https://abgains.com/index.php" method="GET" class="nocsrf">
+      <input type="hidden" name="page" value="search" />
+
+      
+      <div class="picker pattern mobile">
+        <div class="input-box">
+          <input type="text" name="sPattern" class="pattern" placeholder="Search..." value="" autocomplete="off"/>
+          <i class="clean fas fa-times-circle"></i>
+        </div>
+        
+        <div class="results">
+          <div class="loaded"></div>
+          <div class="default"><div class="row minlength"><em>Enter <span class="min">2</span> more character(s) to search...</em></div><div class="row cities locations"><div class="lead">Popular cities</div><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4275947" data-city="4275947">Bhīmavaram, Andhra Pradesh <em>46 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4268561" data-city="4268561">Kākināda, Andhra Pradesh <em>14 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=15261479" data-city="15261479">Kalla, Andhra Pradesh <em>8 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=15261483" data-city="15261483">Annavaram, Andhra Pradesh <em>7 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4278935" data-city="4278935">Amalāpuram, Andhra Pradesh <em>7 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4254054" data-city="4254054">Tuni, Andhra Pradesh <em>5 items</em></a></div></div>
+        </div>
+      </div>
+      
+      
+      
+      <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  
+  <div class="add-to" style="padding-left:5px;padding-top:5px;" > <!-- install button -->
+        <span class="add-to-btn" style="float:left;">
+        
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M21.62 11.588l8.953-2.239c0.943 2.077 1.427 4.333 1.427 6.615 0 8.796-7.24 16.036-16.041 16.036-0.407 0-0.808-0.016-1.209-0.047l6.537-11.131c0.473-0.5 0.875-1.068 1.177-1.692 0.948-2.005 0.927-4.339-0.057-6.328-0.219-0.433-0.485-0.839-0.787-1.215zM17.297 23.021l-2.828 8.905c-8.152-0.801-14.469-7.739-14.469-15.957 0-3.177 0.948-6.287 2.719-8.933l6.443 11.172c0.24 0.719 1.495 3.443 4.089 4.437 1.333 0.505 2.723 0.641 4.047 0.376zM15.964 10.161c-2.672 0.027-5.172 2.057-5.709 4.683-0.38 1.953 0.24 3.968 1.652 5.375 1.62 1.584 4.187 2.104 6.312 1.235 1.875-0.765 3.292-2.568 3.588-4.573 0.36-2.473-1.052-5.109-3.328-6.172-0.785-0.364-1.645-0.552-2.515-0.547zM9.396 13.281l-6.385-6.661c3.020-4.156 7.849-6.62 12.984-6.62 6.084 0 11.661 3.459 14.365 8.901h-13.615c-2.417-0.167-4.385 0.692-5.688 1.937-0.719 0.688-1.287 1.521-1.661 2.443z"/>
+</svg>     
+
+        </span>
+        <!-- install button-->
+        </div> 
+		
+		<script type="text/javascript"> /* service worker .js added and to home screen added*/
+	let deferredPrompt;
+	var div = document.querySelector('.add-to');
+	var button = document.querySelector('.add-to-btn');
+	div.style.display = 'none';
+
+	window.addEventListener('beforeinstallprompt', (e) => {
+	  // Prevent Chrome 67 and earlier from automatically showing the prompt
+	  e.preventDefault();
+	  // Stash the event so it can be triggered later.
+	  deferredPrompt = e;
+	  div.style.display = 'block';
+
+	  button.addEventListener('click', (e) => {
+	  // hide our user interface that shows our A2HS button
+	  div.style.display = 'none';
+	  // Show the prompt
+	  deferredPrompt.prompt();
+	  // Wait for the user to respond to the prompt
+	  deferredPrompt.userChoice
+	    .then((choiceResult) => {
+	      if (choiceResult.outcome === 'accepted') {
+	        console.log('User accepted the A2HS prompt');
+	      } else {
+	        console.log('User dismissed the A2HS prompt');
+	      }
+	      deferredPrompt = null;
+	    });
+	});
+	});
+</script>
+<span class="mlink share isMobile" style="float:right; padding-right:10px; padding-top:5px;">
+    <a href="#" id="shareButton">
+        <i class="fas fa-share-alt" style="font-size: 20px;"></i>
+    </a>
+</span>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    var shareButton = document.getElementById('shareButton');
+
+    shareButton.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        var shareData = {
+            title: document.title || "AB GAINS",
+            text: document.title || "Check out this page",
+            url: window.location.href
+        };
+
+        /* 1️⃣ Modern browsers & iOS (Web Share API) */
+        if (navigator.share) {
+            navigator.share(shareData).catch(function () {
+                console.log("Share cancelled");
+            });
+            return;
+        }
+
+        /* 2️⃣ Android WebView (WebViewGold / custom app scheme) */
+        if (/Android/i.test(navigator.userAgent)) {
+            window.location.href =
+                "shareapp://share?text=" +
+                encodeURIComponent(shareData.text) +
+                "&url=" +
+                encodeURIComponent(shareData.url);
+            return;
+        }
+
+        /* 3️⃣ Final fallback (WhatsApp Web) */
+        var whatsappUrl =
+            "https://wa.me/?text=" +
+            encodeURIComponent(shareData.text + " " + shareData.url);
+
+        window.open(whatsappUrl, "_blank");
+    });
+
+});
+</script>
+
+    
+    
+  </header>
+
+
+
+<div class="content loc-home sec-default no-breadcrumbs" style="padding-top:15px;">
+
+
+
+ 
+
+<div id="flashbox" class="container"><div class="wrap"><div class="wrap2"></div></div></div>  
+  
+    
+  
+    
+  <section class="home-search">
+    <div class="container">
+      <div class="box">
+                  <h1>What would you like to 
+            <div>
+              <span class="l1">buy?</span>
+              <span class="l2">sell?</span>
+              <span class="l3">hire?</span>
+              <span class="l4">rent?</span>
+              <span class="l5">buy?</span>
+            </div>
+          </h1>
+        
+        <form action="https://abgains.com/index.php" method="GET" class="nocsrf">
+          <input type="hidden" name="page" value="search" />
+          
+                    
+                    
+          <div class="input-box picker pattern">
+            <input type="text" name="sPattern" class="pattern" placeholder="Search for categories and Locations" value="" autocomplete="off"/>
+            <i class="clean fas fa-times-circle"></i>
+            <div class="results">
+              <div class="loaded"></div>
+              <div class="default"><div class="row minlength"><em>Enter <span class="min">2</span> more character(s) to search...</em></div><div class="row cities locations"><div class="lead">Popular cities</div><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4275947" data-city="4275947">Bhīmavaram, Andhra Pradesh <em>46 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4268561" data-city="4268561">Kākināda, Andhra Pradesh <em>14 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=15261479" data-city="15261479">Kalla, Andhra Pradesh <em>8 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=15261483" data-city="15261483">Annavaram, Andhra Pradesh <em>7 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4278935" data-city="4278935">Amalāpuram, Andhra Pradesh <em>7 items</em></a><a class="option direct" href="https://abgains.com/index.php?page=search&sCity=4254054" data-city="4254054">Tuni, Andhra Pradesh <em>5 items</em></a></div></div>
+            </div>
+          </div>
+          
+          <button class="btn" type="submit"><i class="fa fa-search"></i><span>Search</span></button>
+
+                  </form>
+		<!--note disabled old model category -->
+			<!--div>
+			<button onclick="openPopup()" class="input-box picker pattern nocsrf" style="max-width:618px;height:40px;font-size:18px;"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp&nbsp Select  Categories <i class="fa fa-angle-down" aria-hidden="true" style="float:right;"></i></button>
+			</div--->
+		<!--note disable old model category-->
+                                
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  /* General Styling for Categories */
+  .categories-list {
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .categories {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+
+  .category-item {
+    width: 100px;
+    height: 136px;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .category-item:hover {
+    transform: scale(1.05);
+  }
+
+  .category-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* Popup Styles */
+  .subcategory-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .popup-content {
+    background-color: #fff;
+    margin: 80px auto;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+  }
+
+  /* Sticky Floating Header */
+  .popup-header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 0px;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    height:50px;
+    
+  }
+
+  .popup-header a {
+    justify-content: center;
+    text-decoration: underline;
+    color: #000;
+    font-size: 20px;
+    margin-left:30px;
+    margin-top:10px;
+    color: #007bff;
+    font-weight: bold;
+    
+
+  }
+
+  .close-popup {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    padding-right:10px;
+    margin-right:10px;
+    
+  }
+
+  .close-popup:hover {
+    color: #000;
+  }
+
+  /* Blur effect for main content */
+  #main-content.popup-blur {
+    filter: blur(4px);
+  }
+
+  /* Disable scrolling when popup is active */
+  body.popup-active {
+    overflow: hidden;
+  }
+  
+  /* Mobile View */
+@media (max-width: 768px) {
+  .categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+  }
+  
+  /* Mobile View */
+@media (max-width: 1024px) {
+  .categories {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+  }
+
+
+  .category-item {
+    flex: 0 0 100px;
+    height: 136px;
+    margin-right: 15px;
+  }
+
+  /* Increase the width of the popup in mobile view */
+  .subcategory-popup .popup-content {
+    width: 80%; /* Set to 80% of the viewport width */
+    max-width: 90%; /* Ensure it doesn’t exceed 90% of the screen width */
+  }
+}
+
+/* Increase vertical gap between subcategories */
+.subcategories ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.subcategory-item {
+  margin-bottom: 15px; /* Increase the margin to create more space between subcategories */
+}
+
+.subcategory-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+/* Alternatively, if using grid or flexbox inside the subcategories popup, you can set a gap */
+.subcategories ul {
+  display: flex;
+  flex-direction: column; /* Stack subcategory items vertically */
+  gap: 15px; /* Add space between items */
+}
+
+/* Optional Scrollbar Styling */
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+</style>
+
+<!-- Wrapper for all content except popup -->
+<div id="main-content">
+  <!-- Categories Section -->
+  <div class="categories-list">
+       
+      
+    <div id="categories-container">
+              <ul class="categories">
+                      <li class="category-item">
+              <a href="javascript:void(0);" class="category-link" data-category-id="145">
+                <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/145.png" alt="Shrimp Buyers" class="category-image" />
+                Shrimp Buyers              </a>
+
+              <!-- Subcategories (hidden, shown in popup) -->
+              <div class="subcategories" id="subcategories-145" style="display:none;">
+                <div class="popup-header">
+                  <a   href="https://abgains.com/index.php?page=search&sCategory=145">
+                    <p style="font-size:20px;">Shrimp Buyers</p>
+                  </a>
+                  <button class="close-popup" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M15 5L5 15" stroke="black" stroke-width="2" />
+                      <path d="M5 5L15 15" stroke="black" stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <br>
+                <h8>Subcategories</h8>
+                                  <ul>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=144">
+                            <p style="font-size:18px; margin-top:15px;">20-25 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=143">
+                            <p style="font-size:18px; margin-top:15px;">26-30 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=142">
+                            <p style="font-size:18px; margin-top:15px;">31-40 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=141">
+                            <p style="font-size:18px; margin-top:15px;">41-50 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=140">
+                            <p style="font-size:18px; margin-top:15px;">51-60 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=139">
+                            <p style="font-size:18px; margin-top:15px;">61-70 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=138">
+                            <p style="font-size:18px; margin-top:15px;">71-80 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=137">
+                            <p style="font-size:18px; margin-top:15px;">81-90 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=136">
+                            <p style="font-size:18px; margin-top:15px;">91-100 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=135">
+                            <p style="font-size:18px; margin-top:15px;">101-110 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=134">
+                            <p style="font-size:18px; margin-top:15px;">111-120 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=133">
+                            <p style="font-size:18px; margin-top:15px;">121-130 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=132">
+                            <p style="font-size:18px; margin-top:15px;">131-140 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=131">
+                            <p style="font-size:18px; margin-top:15px;">141-150 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=195">
+                            <p style="font-size:18px; margin-top:15px;">170-200 count vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=193">
+                            <p style="font-size:18px; margin-top:15px;">100-150 count vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=196">
+                            <p style="font-size:18px; margin-top:15px;">201-230 count vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=130">
+                            <p style="font-size:18px; margin-top:15px;">151-160 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=129">
+                            <p style="font-size:18px; margin-top:15px;">161-170 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=128">
+                            <p style="font-size:18px; margin-top:15px;">171-180 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=127">
+                            <p style="font-size:18px; margin-top:15px;">181-190 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=126">
+                            <p style="font-size:18px; margin-top:15px;">191-200 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=125">
+                            <p style="font-size:18px; margin-top:15px;">201-250 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=124">
+                            <p style="font-size:18px; margin-top:15px;">251-300 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=123">
+                            <p style="font-size:18px; margin-top:15px;">301-350 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=122">
+                            <p style="font-size:18px; margin-top:15px;">351-400 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=197">
+                            <p style="font-size:18px; margin-top:15px;">100-200 count vannamei </p>
+                          </a>
+                        </h4>
+                      </li>
+                                      </ul>
+                              </div>
+            </li>
+                      <li class="category-item">
+              <a href="javascript:void(0);" class="category-link" data-category-id="97">
+                <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/97.png" alt="Shrimp Sellers" class="category-image" />
+                Shrimp Sellers              </a>
+
+              <!-- Subcategories (hidden, shown in popup) -->
+              <div class="subcategories" id="subcategories-97" style="display:none;">
+                <div class="popup-header">
+                  <a   href="https://abgains.com/index.php?page=search&sCategory=97">
+                    <p style="font-size:20px;">Shrimp Sellers</p>
+                  </a>
+                  <button class="close-popup" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M15 5L5 15" stroke="black" stroke-width="2" />
+                      <path d="M5 5L15 15" stroke="black" stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <br>
+                <h8>Subcategories</h8>
+                                  <ul>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=121">
+                            <p style="font-size:18px; margin-top:15px;">20-25 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=120">
+                            <p style="font-size:18px; margin-top:15px;">26-30 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=119">
+                            <p style="font-size:18px; margin-top:15px;">31-40 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=118">
+                            <p style="font-size:18px; margin-top:15px;">41-50 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=117">
+                            <p style="font-size:18px; margin-top:15px;">51-60 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=116">
+                            <p style="font-size:18px; margin-top:15px;">61-70 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=115">
+                            <p style="font-size:18px; margin-top:15px;">71-80 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=114">
+                            <p style="font-size:18px; margin-top:15px;">81-90 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=113">
+                            <p style="font-size:18px; margin-top:15px;">91-100 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=112">
+                            <p style="font-size:18px; margin-top:15px;">91-100 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=111">
+                            <p style="font-size:18px; margin-top:15px;">101-110 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=110">
+                            <p style="font-size:18px; margin-top:15px;">111-120 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=109">
+                            <p style="font-size:18px; margin-top:15px;">121-130 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=108">
+                            <p style="font-size:18px; margin-top:15px;">131-140 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=107">
+                            <p style="font-size:18px; margin-top:15px;">141-150 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=106">
+                            <p style="font-size:18px; margin-top:15px;">151-160 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=105">
+                            <p style="font-size:18px; margin-top:15px;">161-170 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=104">
+                            <p style="font-size:18px; margin-top:15px;">171-180 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=103">
+                            <p style="font-size:18px; margin-top:15px;">181-190 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=101">
+                            <p style="font-size:18px; margin-top:15px;">191-200 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=102">
+                            <p style="font-size:18px; margin-top:15px;">201-250 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=100">
+                            <p style="font-size:18px; margin-top:15px;">251-300 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=99">
+                            <p style="font-size:18px; margin-top:15px;">301-350 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=98">
+                            <p style="font-size:18px; margin-top:15px;">351-400 Count Vannamei</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=192">
+                            <p style="font-size:18px; margin-top:15px;">Tiger sales</p>
+                          </a>
+                        </h4>
+                      </li>
+                                      </ul>
+                              </div>
+            </li>
+                      <li class="category-item">
+              <a href="javascript:void(0);" class="category-link" data-category-id="154">
+                <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/154.png" alt="Other Services" class="category-image" />
+                Other Services              </a>
+
+              <!-- Subcategories (hidden, shown in popup) -->
+              <div class="subcategories" id="subcategories-154" style="display:none;">
+                <div class="popup-header">
+                  <a   href="https://abgains.com/index.php?page=search&sCategory=154">
+                    <p style="font-size:20px;">Other Services</p>
+                  </a>
+                  <button class="close-popup" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M15 5L5 15" stroke="black" stroke-width="2" />
+                      <path d="M5 5L15 15" stroke="black" stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+                <br>
+                <h8>Subcategories</h8>
+                                  <ul>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=155">
+                            <p style="font-size:18px; margin-top:15px;">Heavy Transport</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=185">
+                            <p style="font-size:18px; margin-top:15px;">mini transport</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=169">
+                            <p style="font-size:18px; margin-top:15px;">Medicines</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=183">
+                            <p style="font-size:18px; margin-top:15px;">Probiotics</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=168">
+                            <p style="font-size:18px; margin-top:15px;">Aqua Labs</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=159">
+                            <p style="font-size:18px; margin-top:15px;">Feeds</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=184">
+                            <p style="font-size:18px; margin-top:15px;">Hatchery</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=160">
+                            <p style="font-size:18px; margin-top:15px;">Fish seed farm </p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=187">
+                            <p style="font-size:18px; margin-top:15px;">Vannamei seed farms</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=167">
+                            <p style="font-size:18px; margin-top:15px;">Finance</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=166">
+                            <p style="font-size:18px; margin-top:15px;">Packaging</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=189">
+                            <p style="font-size:18px; margin-top:15px;">I.Q.F SALES</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=191">
+                            <p style="font-size:18px; margin-top:15px;">Sea material sales</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=165">
+                            <p style="font-size:18px; margin-top:15px;">Tubs & Nets</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=198">
+                            <p style="font-size:18px; margin-top:15px;">Sludge motors</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=164">
+                            <p style="font-size:18px; margin-top:15px;">Areators</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=194">
+                            <p style="font-size:18px; margin-top:15px;">Crab seeds</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=163">
+                            <p style="font-size:18px; margin-top:15px;">Workers</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=162">
+                            <p style="font-size:18px; margin-top:15px;">Hiring / job Openings</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=161">
+                            <p style="font-size:18px; margin-top:15px;">Pond for Lease</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=158">
+                            <p style="font-size:18px; margin-top:15px;">Earth Movers</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=186">
+                            <p style="font-size:18px; margin-top:15px;">Aqua needs</p>
+                          </a>
+                        </h4>
+                      </li>
+                                          <li class="subcategory-item">
+                        <h4>
+                          <a href="https://abgains.com/index.php?page=search&sCategory=156">
+                            <p style="font-size:18px; margin-top:15px;">Ice Factory</p>
+                          </a>
+                        </h4>
+                      </li>
+                                      </ul>
+                              </div>
+            </li>
+                    <li class="category-item">
+           <a href="https://abgains.com/index.php?page=search" class="all">
+            
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64px" height="64px"><path d="M116.65 219.35a15.68 15.68 0 0 0 22.65 0l96.75-99.83c28.15-29 26.5-77.1-4.91-103.88C203.75-7.7 163-3.5 137.86 22.44L128 32.58l-9.85-10.14C93.05-3.5 52.25-7.7 24.86 15.64c-31.41 26.78-33 74.85-5 103.88zm143.92 100.49h-48l-7.08-14.24a27.39 27.39 0 0 0-25.66-17.78h-71.71a27.39 27.39 0 0 0-25.66 17.78l-7 14.24h-48A27.45 27.45 0 0 0 0 347.3v137.25A27.44 27.44 0 0 0 27.43 512h233.14A27.45 27.45 0 0 0 288 484.55V347.3a27.45 27.45 0 0 0-27.43-27.46zM144 468a52 52 0 1 1 52-52 52 52 0 0 1-52 52zm355.4-115.9h-60.58l22.36-50.75c2.1-6.65-3.93-13.21-12.18-13.21h-75.59c-6.3 0-11.66 3.9-12.5 9.1l-16.8 106.93c-1 6.3 4.88 11.89 12.5 11.89h62.31l-24.2 83c-1.89 6.65 4.2 12.9 12.23 12.9a13.26 13.26 0 0 0 10.92-5.25l92.4-138.91c4.88-6.91-1.16-15.7-10.87-15.7zM478.08.33L329.51 23.17C314.87 25.42 304 38.92 304 54.83V161.6a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V99.66l112-17.22v47.18a83.25 83.25 0 0 0-16-1.7c-35.35 0-64 21.48-64 48s28.65 48 64 48c35.2 0 63.73-21.32 64-47.66V32c0-19.48-16-34.42-33.92-31.67z"/></svg>
+            
+
+            <h6 style="color:#007bff;">All Categories</h6>
+          </a>
+           </li>
+        </ul>
+               
+    </div>
+    
+      
+  </div>
+  
+</div>
+
+<!-- Popup Modal -->
+<div id="subcategory-popup" class="subcategory-popup">
+  <div class="popup-content">
+    <div id="popup-subcategory-list">
+      <!-- Subcategories will be dynamically loaded here -->
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery(document).ready(function($) {
+    // Open Popup
+    $('.category-link').on('click', function(e) {
+      e.preventDefault();
+
+      var categoryId = $(this).data('category-id');
+      var subcategories = $('#subcategories-' + categoryId).html();
+
+      // Populate subcategories
+      $('#popup-subcategory-list').html(subcategories);
+
+      // Show popup
+      $('#subcategory-popup').fadeIn();
+      $('#main-content').addClass('popup-blur');
+      $('body').addClass('popup-active');
+    });
+
+    // Close Popup
+    $(document).on('click', '.close-popup', function() {
+      $('#subcategory-popup').fadeOut();
+      $('#main-content').removeClass('popup-blur');
+      $('body').removeClass('popup-active');
+    });
+
+    // Close when clicking outside
+    $(window).on('click', function(event) {
+      if ($(event.target).is('#subcategory-popup')) {
+        $('#subcategory-popup').fadeOut();
+        $('#main-content').removeClass('popup-blur');
+        $('body').removeClass('popup-active');
+      }
+    });
+  });
+</script>
+
+<!---- disabled 
+
+        <h2>Categories</h2>
+        
+        <div id="home-cat" >
+                    
+            
+                           
+            <a href="https://abgains.com/index.php?page=search&sCategory=145" data-id="145">
+              <div style="background-color:rgba(244, 67, 54, 0.15);">
+                                
+                                  <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/145.png" alt="Shrimp Buyers" class=""/>
+                              </div>
+
+              <p style="text-align:center"><span style="text-align:center">Shrimp Buyers</span></p>
+            </a>
+                           
+            <a href="https://abgains.com/index.php?page=search&sCategory=97" data-id="97">
+              <div style="background-color:rgba(244, 67, 54, 0.15);">
+                                
+                                  <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/97.png" alt="Shrimp Sellers" class=""/>
+                              </div>
+
+              <p style="text-align:center"><span style="text-align:center">Shrimp Sellers</span></p>
+            </a>
+                           
+            <a href="https://abgains.com/index.php?page=search&sCategory=154" data-id="154">
+              <div style="background-color:rgba(244, 67, 54, 0.15);">
+                                
+                                  <img src="https://abgains.com/oc-content/themes/epsilon/images/small_cat/154.png" alt="Other Services" class=""/>
+                              </div>
+
+              <p style="text-align:center"><span style="text-align:center">Other Services</span></p>
+            </a>
+                  </div---->
+      </div>
+    </div>
+  </section>
+
+
+	<br>  
+	<style>
+    .forecast-container {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling on mobile */
+        scroll-snap-type: x mandatory; /* Snap to each forecast day */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+        flex-wrap: nowrap; /* Prevent wrapping of forecast days on larger screens */
+        justify-content: center; /* Center align items horizontally by default */
+        
+    }
+
+    .forecast-day {
+        margin-left: 2px; /* Adjusted margin */
+        height: auto;
+        flex: 0 0 auto;
+        width: 200px; /* Width of each forecast day box for larger screens */
+        margin-right: 10px;
+        scroll-snap-align: start; /* Align each box to the start of the scroll container */
+        border: 1px ;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #3EA0FF;
+        color: #000000;
+    }
+
+    .forecast-day:first-child {
+        margin-left: 0; /* Remove unnecessary left margin */
+    }
+
+    @media (max-width: 768px) {
+        .forecast-container {
+            justify-content: flex-start; /* Align items to the start on smaller screens */
+            padding: 5px; /* Optional: add padding to maintain distance from edges */
+            margin-left: 5px; /* Optional: adjust left margin */
+        }
+
+        .forecast-day {
+            width: 60%; /* Adjust width for smaller screens */
+            min-width: 120px; /* Ensure a minimum width */
+        }
+    }
+</style>
+
+
+
+
+       <div style="text-align: center; color: #000000; background-color: #3EA0FF;" id="location-info" class="location-info">
+    <!-- Location information will be displayed here -->
+</div>
+
+<div style="text-align:center;margin:10px;">
+    <button onclick="forceUpdateLocation()"
+        style="padding:8px 15px;border:none;border-radius:5px;background:#000;color:#fff;">
+        📍 Update My Location
+    </button>
+</div>
+
+
+<!--h4 style="margin-left:5px;">Weather Forecast for  5 days</h4-->
+<br>
+<div id="forecast-data" class="forecast-data" >
+    <!-- Forecast data will be displayed here -->
+    <div id="forecast-container" class="forecast-container">
+        <!-- Forecast days will be dynamically added here -->
+    </div>
+	<br>
+	<div style="text-align: center;" >
+<div style='text-align:center; color: #000000;'>
+        <table border='1' style='margin: 0 auto; text-align:center;background-color:white;'>
+            <tr>
+                <th>Tithi</th>
+                <th>Days Remaining</th>
+                <th>Date</th>
+            </tr><tr>
+            <td>Ashtami</td>
+            <td>6 days to go</td>
+            <td>on 26-03-2026</td>
+          </tr><tr>
+            <td>Navami</td>
+            <td>7 days to go</td>
+            <td>on 27-03-2026</td>
+          </tr><tr>
+            <td>Purnima</td>
+            <td>13 days to go</td>
+            <td>on 02-04-2026</td>
+          </tr><tr>
+            <td>Amavasya</td>
+            <td>28 days to go</td>
+            <td>on 17-04-2026</td>
+          </tr></table>
+      </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+    <script>
+    const weatherIconMap = {
+            "01d": "/img/clear.png",    // Clear sky during the day
+            "01n": "/img/clear.png",    // Clear sky during the night
+            "02d": "/img/few.png",    // Few clouds during the day
+            "02n": "/img/few.png",    // Few clouds during the night
+            "03d": "/img/scattered.png",    // Scattered clouds
+            "03n": "/img/scattered.png",    // Scattered clouds (night)
+            "04d": "/img/broken.png",    // Broken clouds
+            "04n": "/img/broken.png",    // Broken clouds (night)
+            "09d": "/img/shower.png",    // Shower rain during day
+            "09n": "/img/shower.png",    // Shower rain during night
+            "10d": "/img/rain.png",    // Rain during day
+            "10n": "/img/rain.png",    // Rain during night
+            "11d": "/img/thunder.png",    // Thunderstorm during day
+            "11n": "/img/thunder.png",    // Thunderstorm during night
+            "13d": "/img/snow.png",    // Snow during day
+            "13n": "/img/snow.png",    // Snow during night
+            "50d": "/img/haze.png",    // Mist during day
+            "50n": "/img/haze.png",    // Mist during night
+        };
+    async function fetchCityName(latitude, longitude) {
+    const apiKey = 'cf74638577d23c0bcdbe94c03080ee08';
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    try {
+        // Fetch current weather data
+        const [weatherResponse, forecastResponse] = await Promise.all([
+            fetch(weatherUrl),
+            fetch(forecastUrl)
+        ]);
+
+        const weatherData = await weatherResponse.json();
+        const forecastData = await forecastResponse.json();
+
+        // Display location information including current temperature and date
+        const locationInfo = document.getElementById('location-info');
+        const cityName = weatherData.name;
+        const currentTemperature = weatherData.main.temp;
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            weekday: 'long',
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric'
+        });
+        
+        const weatherCondition = weatherData.weather[0].icon; // e.g., '01d', '02d', etc.
+        const weatherIcon =  weatherIconMap[weatherCondition] || "path/to/default-icon.png"; // Default icon if condition is not found
+
+
+        // Fetch tithi data for the current date
+        const tithiUrl = 'fetch_tithi.php'; // Replace with your API endpoint
+        const tithiResponse = await fetch(tithiUrl);
+        
+        if (!tithiResponse.ok) {
+            throw new Error('Failed to fetch tithi data.');
+        }
+        
+        const tithiData = await tithiResponse.json();
+
+        // Find matching tithi data for the current date
+        const today = new Date();
+        const matchingTithi = tithiData.find(tithi => {
+            const tithiDate = new Date(tithi.date);
+            return tithiDate.getDate() === today.getDate() &&
+                   tithiDate.getMonth() === today.getMonth() &&
+                   tithiDate.getFullYear() === today.getFullYear();
+        });
+
+        // Prepare tithi information
+        let tithiHTML = '';
+        if (matchingTithi) {
+            tithiHTML = `
+                <div class="tithi-info">
+                    <p><span class="emoji" style="text-align:center;">${matchingTithi.icon}</span> ${matchingTithi.tithi}</p>
+                    <p><i class="far fa-clock icon"></i> ${matchingTithi.description}</p>
+                </div>
+            `;
+        }
+
+        locationInfo.innerHTML = `
+            <h1 style="color: #000000;"><i class="fas fa-map-marker-alt"></i> <strong>${cityName}</strong></h1>
+            <strong style="font-size:20px;">Today is <i class="fas fa-calendar-day icon"></i> ${currentDate}</strong>
+             <br><ul style="font-size:18px;"><strong>${tithiHTML}</strong></ul>
+			<ul style="font-size:18px;"><i class="fas fa-thermometer-half icon"></i><strong> ${currentTemperature}&deg;C </strong><img src="${weatherIcon}" alt="Weather Icon" style="width: 50px; height: 50px;"></ul>
+            <ul style="font-size:18px;"><strong>${weatherData.weather[0].description}</strong>
+        `;
+
+        // Proceed with displaying 5-day forecast
+        displayWeatherForecast(forecastData);
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+        const locationInfo = document.getElementById('location-info');
+        locationInfo.textContent = 'Failed to fetch weather data.';
+    }
+}
+
+async function displayWeatherForecast(data) {
+    const forecastData = document.getElementById('forecast-container');
+    forecastData.innerHTML = ''; // Clear previous data
+
+    // Extract daily forecasts (assuming data is structured in 3-hour intervals)
+    const dailyForecasts = data.list.filter((item, index) => index % 8 === 0);
+
+    // Skip the first day (index 0 is today), then take the next 5 days
+    const fiveDayForecasts = dailyForecasts.slice(1, 6);
+
+    try {
+        // Fetch tithi data for the forecast period
+        const tithiUrl = 'fetch_tithi.php'; // Replace with your API endpoint
+        const tithiResponse = await fetch(tithiUrl);
+        
+        if (!tithiResponse.ok) {
+            throw new Error('Failed to fetch tithi data.');
+        }
+        
+        const tithiData = await tithiResponse.json();
+
+        // Iterate through each day's forecast
+        for (let i = 0; i < fiveDayForecasts.length; i++) {
+            const day = fiveDayForecasts[i];
+            const date = new Date(day.dt * 1000);
+            const formattedDate = date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+            });
+            const weatherCondition = day.weather[0].icon;
+            const weatherIcon = weatherIconMap[weatherCondition] || "path/to/default-icon.png";
+            const description = day.weather[0].description;
+            const temperature = day.main.temp;
+
+            // Find matching tithi data for this date
+            const matchingTithi = tithiData.find(tithi => {
+                const tithiDate = new Date(tithi.date);
+                return tithiDate.getDate() === date.getDate();
+            });
+
+            // Prepare tithi information
+            let tithiHTML = '';
+            if (matchingTithi) {
+                tithiHTML = `
+                    <div class="tithi-info">
+                        <p><span class="emoji">${matchingTithi.icon}</span> ${matchingTithi.tithi}</p>
+                        <p><i class="far fa-clock icon"></i> ${matchingTithi.description}</p>
+                    </div>
+                `;
+            }
+
+            // Create HTML for each forecast day
+            const forecastHTML = `
+                <div class="forecast-day">
+                    <div class="info">
+                        <ul style="font-size:16px;"><strong> <i class="fas fa-calendar-day icon"></i> ${formattedDate}</strong></ul>
+                        <br><br><ul style="text-align:center; font-size:15px;"><strong>${tithiHTML}</strong></ul><!-- Display tithi information here -->    
+                        <br><br><h6 style="text-align:center;">
+                            <i style="color: #000000;" class="fas fa-thermometer-half icon"></i> <strong style="color: #000000;">${temperature}&deg;C</strong> 
+                            <img src="${weatherIcon}" alt="Weather Icon" style="width: 50px; height: 50px;">
+
+                       </h6>
+			<br><br><h6 style="text-align:center; color: #000000;"> ${description}</h6>                   
+
+				   </div>
+                </div>
+            `;
+            forecastData.innerHTML += forecastHTML;
+        }
+    } catch (error) {
+        console.error('Error fetching tithi data:', error);
+        // Display a message indicating failure to fetch tithi data
+        forecastData.innerHTML = '<p>Failed to fetch tithi data.</p>';
+    }
+}
+
+
+
+/* ==========================
+   CONFIG
+========================== */
+const LOCATION_CACHE_KEY = "abgains_location";
+const LOCATION_TIME_KEY  = "abgains_location_time";
+const CACHE_TIME         = 30 * 60 * 1000; // 30 min
+const MOVE_KM            = 0.5;
+
+/* ==========================
+   DISTANCE CALC
+========================== */
+function distanceKm(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos(lat1 * Math.PI / 180) *
+        Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/* ==========================
+   SMART LOCATION (AUTO)
+========================== */
+function getLocationSmart(force = false) {
+    const cached = localStorage.getItem(LOCATION_CACHE_KEY);
+    const cachedTime = localStorage.getItem(LOCATION_TIME_KEY);
+
+    if (!force && cached && cachedTime) {
+        const age = Date.now() - Number(cachedTime);
+        if (age < CACHE_TIME) {
+            const loc = JSON.parse(cached);
+            fetchCityName(loc.lat, loc.lng);
+            return;
+        }
+    }
+
+    if (!navigator.geolocation) {
+        showLocationError("Geolocation not supported");
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+        pos => {
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+
+            if (!force && cached) {
+                const old = JSON.parse(cached);
+                if (distanceKm(old.lat, old.lng, lat, lng) < MOVE_KM) {
+                    fetchCityName(old.lat, old.lng);
+                    return;
+                }
+            }
+
+            localStorage.setItem(LOCATION_CACHE_KEY, JSON.stringify({ lat, lng }));
+            localStorage.setItem(LOCATION_TIME_KEY, Date.now().toString());
+
+            fetchCityName(lat, lng);
+        },
+        () => showLocationError("Location permission denied"),
+        { enableHighAccuracy: false, maximumAge: 600000, timeout: 5000 }
+    );
+}
+
+/* ==========================
+   MANUAL BUTTON
+========================== */
+function forceUpdateLocation() {
+    localStorage.removeItem(LOCATION_CACHE_KEY);
+    localStorage.removeItem(LOCATION_TIME_KEY);
+    getLocationSmart(true);
+}
+
+/* ==========================
+   AUTO LOAD ON HOME
+========================== */
+document.addEventListener("DOMContentLoaded", () => {
+    getLocationSmart(); // 🔥 AUTO LOAD
+});
+
+
+
+
+
+</script>
+
+
+
+<br>
+
+  
+    
+
+  
+      
+    <section class="home-premium">
+      <!--- diasbled---div class="container">
+        <div class="block">
+          <h2>Today's premium selection</h2>
+
+          <div class="nice-scroll-wrap">
+            <div class="nice-scroll-prev"><i class="fas fa-caret-left"></i></div>
+            
+            <div id="premium-items" class="products grid nice-scroll no-visible-scroll">
+                          </div>
+            
+            <div class="nice-scroll-next"><i class="fas fa-caret-right"></i></div>
+          </div>
+        </div>
+      </div---hidden---->
+    </section>
+
+	<style>
+  .x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  }
+  
+  .zox {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    background-color: #ffffff;
+    margin: 10px; /* Adjust margin as needed */
+    text-align: center; /* Center text horizontally */
+    line-height: 150px; /* Center text vertically */
+  }
+
+  /* Media query for screens smaller than 600px (adjust as needed) */
+  @media (max-width: 600px) {
+    .zox {
+      flex-basis: 100%; /* Ensure full width of the container */
+      max-width: calc(50% - 20px); /* Limit width to 50% of the container minus margins */
+      height: 150px; /* Keep height the same */
+    }
+  }
+</style>
+
+<div class="x">
+  <div class="zox"><a href="https://abgains.com/index.php?page=custom&route=alcal-route&my-numeric-param=12345&my-own-param=my-own-value">
+  <i class="fa fa-calculator" aria-hidden="true" style="font-size:120px; margin-top:5px; color:#6666cc;"></i>
+  <h4 style="margin-top:5px; color: #000000;">Calculators</h4></a></div>
+  <div class="zox"><a href="https://abgains.com/index.php?page=custom&route=all-route&my-numeric-param=12345&my-own-param=my-own-value">
+<i class="fas fa-chart-line" style="margin-top:5px;font-size:120px;color:#6666cc;"></i>
+<h4 style="margin-top:5px; color: #000000;">Price Trends</h4></a></div>
+<div class="zox"><a href="https://abgains.com/index.php?page=custom&route=broodstock-route&my-numeric-param=12345&my-own-param=my-own-value">
+<i class="fa-solid fa-shrimp" style="margin-top:5px;font-size:120px;color:#66
