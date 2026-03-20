@@ -5,12 +5,12 @@ import re
 import urllib.parse
 from datetime import datetime
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
+from curl_cffi import requests
 
 def get_live_market_data():
-    base_url = "https://abgains.com/index.php?route=all-route"
-    encoded_url = urllib.parse.quote(base_url)
-    
+    target_url = "https://abgains.com/index.php?route=all-route"
+    encoded_url = urllib.parse.quote(target_url)
+
     steps_from_30 = {
         25: 75, 26: 25, 27: 10, 30: 0, 
         35: -65, 37: -70, 40: -75, 45: -95, 47: -100, 50: -105,
@@ -18,66 +18,59 @@ def get_live_market_data():
     }
 
     current_30_price = None
-    status_msg = "System Tripped - All Proxy Layers Failed"
+    status_msg = "System Tripped - All Evasion Layers Failed"
 
-    # THE PIVOT: Bouncing the request through open proxies to bypass the GitHub IP block
-    sources_to_try = [
-        {"name": "AllOrigins Proxy", "url": f"https://api.allorigins.win/raw?url={encoded_url}"},
-        {"name": "CorsProxy Layer", "url": f"https://corsproxy.io/?{encoded_url}"},
-        {"name": "Primary Target", "url": base_url},
-        {"name": "Google Cache", "url": f"http://webcache.googleusercontent.com/search?q=cache:{base_url}"},
-        {"name": "Wayback Machine", "url": f"https://web.archive.org/web/2/{base_url}"}
+    # Multi-layered attack: TLS Impersonation + API Proxies + Caches
+    sources = [
+        {"name": "Direct TLS Chrome Spoof", "url": target_url, "type": "direct"},
+        {"name": "CodeTabs Proxy", "url": f"https://api.codetabs.com/v1/proxy/?quest={target_url}", "type": "proxy"},
+        {"name": "AllOrigins API", "url": f"https://api.allorigins.win/get?url={encoded_url}", "type": "json_proxy"},
+        {"name": "Google Cache", "url": f"http://webcache.googleusercontent.com/search?q=cache:{target_url}", "type": "direct"}
     ]
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            extra_http_headers={'Accept-Language': 'en-US,en;q=0.9'}
-        )
+    for source in sources:
+        if current_30_price: break
+        
+        for attempt in range(1, 11):
+            try:
+                time.sleep(random.uniform(2.0, 5.0))
+                print(f"DEBUG: Attacking via {source['name']} - Attempt {attempt}")
+                
+                # curl_cffi fakes the exact network signature of Chrome v110
+                response = requests.get(source["url"], impersonate="chrome110", timeout=30)
+                
+                html_content = ""
+                if source["type"] == "json_proxy":
+                    data = response.json()
+                    html_content = data.get("contents", "")
+                else:
+                    html_content = response.text
 
-        for source in sources_to_try:
-            if current_30_price:
-                break 
+                soup = BeautifulSoup(html_content, 'html.parser')
                 
-            for attempt in range(1, 6): 
-                try:
-                    time.sleep(random.uniform(2.0, 4.0))
-                    page.goto(source["url"], timeout=45000, wait_until="domcontentloaded")
-                    time.sleep(3) 
+                # Deep Scan extraction logic
+                all_rows = soup.find_all('tr')
+                for row in all_rows:
+                    cells = [c.get_text(strip=True).lower() for c in row.find_all(['td', 'th'])]
                     
-                    html_content = page.content()
-                    print(f"DEBUG: Hitting {source['name']} - Attempt {attempt}")
-                    
-                    soup = BeautifulSoup(html_content, 'html.parser')
-                    
-                    rows = soup.find_all('tr')
-                    for row in rows:
-                        cols = row.find_all(['td', 'th'])
-                        if len(cols) >= 2:
-                            text_c0 = cols[0].text.strip().lower()
-                            text_c1 = cols[1].text.strip().replace(',', '')
-                            
-                            count_matches = re.findall(r'\b30\b', text_c0)
-                            price_matches = re.findall(r'\d{3}', text_c1)
-                            
-                            if count_matches and price_matches:
-                                potential_price = int(price_matches[0])
-                                if 300 <= potential_price <= 700:
-                                    current_30_price = potential_price
-                                    status_msg = f"Live Anchor Active ({source['name']})"
-                                    print(f"DEBUG: DATA EXTRACTED - {current_30_price} via {source['name']}")
-                                    break
-                        if current_30_price:
-                            break
-                except Exception as e:
-                    print(f"DEBUG: Blocked on {source['name']} - {e}")
-                    continue 
-                
-                if current_30_price:
-                    break
-                    
-        browser.close()
+                    if len(cells) >= 2:
+                        text_c0 = cells[0]
+                        text_c1 = cells[1].replace(',', '')
+                        
+                        count_matches = re.findall(r'\b30\b', text_c0)
+                        price_matches = re.findall(r'\d{3}', text_c1)
+                        
+                        if count_matches and price_matches:
+                            potential_price = int(price_matches[0])
+                            if 300 <= potential_price <= 750:
+                                current_30_price = potential_price
+                                status_msg = f"Live Data Extracted ({source['name']})"
+                                print(f"DEBUG: SUCCESS - Fetched 30-count at {current_30_price}")
+                                break
+                if current_30_price: break
+            except Exception as e:
+                print(f"DEBUG: {source['name']} Attempt {attempt} Failed - {str(e)}")
+                continue
 
     full_market_prices = {}
     
